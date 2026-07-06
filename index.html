@@ -1,158 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>이희호 ♥ 강하은 모바일 청첩장</title>
-  <meta name="description" content="2026년 8월 8일 토요일 오전 11시, 파로스웨딩홀 2층 파로스홀에서 이희호와 강하은의 결혼식에 초대합니다." />
-  <meta property="og:title" content="이희호 ♥ 강하은 모바일 청첩장" />
-  <meta property="og:description" content="2026.08.08 SAT 11:00 AM · 파로스웨딩홀 2층 파로스홀" />
-  <meta property="og:image" content="images/main.jpg" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#fff7ea" />
+  <title>HEEHO ♥ HAEUN Wedding Invitation</title>
+  <meta name="description" content="2026년 8월 8일 토요일 오전 11시, 파로스컨벤션 파로스홀에서 열리는 이희호 ♥ 강하은 결혼식에 초대합니다." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Serif+KR:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="petals" aria-hidden="true"></div>
-  <button class="music-btn" id="musicBtn" type="button" aria-label="배경음악 켜기">♪</button>
+  <div id="progress"></div>
+  <div class="opening" id="opening"><div><p>2026.08.08</p><h1>HEEHO ♥ HAEUN</h1><span>Wedding Invitation</span></div></div>
+  <button class="music-btn" id="musicBtn" aria-label="배경음악">♪</button>
+  <div class="petals" id="petals"></div>
+
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-shade"></div>
+    <div class="hero-text reveal">
+      <p class="eyebrow">Wedding Invitation</p>
+      <h1>HEEHO<br><span>♥</span><br>HAEUN</h1>
+      <p class="date">2026. 08. 08 SAT 11:00 AM</p>
+      <p class="place">파로스컨벤션 2층 파로스홀</p>
+    </div>
+  </header>
 
   <main>
-    <section class="hero">
-      <img src="images/main.jpg" alt="신랑 신부 메인 사진" class="hero-img" />
-      <div class="hero-overlay"></div>
-      <div class="hero-text">
-        <div class="luxury-mark">✦</div>
-        <p class="eyebrow">Wedding Invitation</p>
-        <h1>HEEHO <span>♥</span> HAEUN</h1>
-        <p class="date">2026. 08. 08 SAT · 11:00 AM</p>
-        <p class="place">파로스웨딩홀 2층 파로스홀</p>
-        <div class="scroll-cue">SCROLL</div>
-      </div>
-    </section>
-
     <section class="section intro reveal">
-      <p class="small-title">Invitation</p>
-      <h2>소중한 분들을 초대합니다.</h2>
-      <p>
-        서로의 가장 좋은 친구가 되어<br />
-        새로운 삶을 시작하려 합니다.<br /><br />
-        귀한 걸음으로 축복해 주시면<br />
-        더없는 기쁨이 되겠습니다.
-      </p>
-    </section>
-
-    <section class="section couple reveal">
-      <p class="small-title">Bride & Groom</p>
-      <div class="names">
-        <div><span>신랑</span><strong>이희호</strong></div>
-        <div class="heart">♥</div>
-        <div><span>신부</span><strong>강하은</strong></div>
+      <p class="section-kicker">INVITATION</p>
+      <h2>소중한 분들을 초대합니다</h2>
+      <p>서로의 가장 좋은 친구가 되어<br>새로운 삶을 시작하려 합니다.</p>
+      <p>귀한 걸음으로 축복해 주시면<br>더없는 기쁨이 되겠습니다.</p>
+      <div class="parents">
+        <p>이지상 · 강영란의 아들 <b>희호</b></p>
+        <p>LE VAN THUOC · LAM THI HANH의 딸 <b>하은</b></p>
       </div>
-      <p class="parents">
-        이지상 · 강영란의 아들 <b>희호</b><br />
-        LE VAN THUOC · LAM THI HANH의 딸 <b>하은</b>
-      </p>
     </section>
 
     <section class="section dday reveal">
-      <p class="small-title">Wedding Day</p>
-      <h2>2026년 8월 8일 토요일</h2>
-      <p class="time">오전 11시</p>
-      <div class="dday-box" id="dday">D-Day</div>
-      <div class="calendar-card glass">
-        <div class="cal-head"><span>August</span><b>2026</b></div>
-        <div class="cal-grid"><span>S</span><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><i></i><i></i><i></i><i></i><i></i><i></i><b>1</b><b>2</b><b>3</b><b>4</b><b>5</b><b>6</b><b>7</b><b class="wedding-day">8</b></div>
+      <p class="section-kicker">SAVE THE DATE</p>
+      <div class="calendar-card">
+        <div class="cal-head">2026년 8월</div>
+        <div class="cal-grid cal-korean">
+          <span>일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span>토</span>
+          <i></i><i></i><i></i><i></i><i></i><i></i><em>1</em>
+          <em>2</em><em>3</em><em>4</em><em>5</em><em>6</em><em>7</em><b>8</b>
+          <em>9</em><em>10</em><em>11</em><em>12</em><em>13</em><em>14</em><em>15</em>
+          <em>16</em><em>17</em><em>18</em><em>19</em><em>20</em><em>21</em><em>22</em>
+          <em>23</em><em>24</em><em>25</em><em>26</em><em>27</em><em>28</em><em>29</em>
+          <em>30</em><em>31</em>
+        </div>
+        <p class="wedding-label">결혼식</p>
+      </div>
+      <h2 id="dday">D-000</h2>
+      <p>2026년 8월 8일 토요일 오전 11시</p>
+    </section>
+
+    <section class="section couple reveal">
+      <p class="section-kicker">BRIDE & GROOM</p>
+      <div class="couple-grid">
+        <article class="profile-card">
+          <span>GROOM</span><h3>이희호</h3><p>HEEHO LEE</p>
+        </article>
+        <article class="profile-card bride-card">
+          <span>BRIDE</span><h3>강하은</h3><p class="bride-name">LE THI THU</p>
+        </article>
       </div>
     </section>
 
-    <section class="section gallery-section reveal">
-      <p class="small-title">Gallery</p>
+    <section class="photo-band reveal"><img src="images/gallery2.png" alt="웨딩 사진" loading="lazy"><div>Our Beautiful Moment</div></section>
+
+    <section class="section gallery reveal">
+      <p class="section-kicker">GALLERY</p>
       <h2>우리의 순간</h2>
-      <div class="gallery">
-        <img src="images/main.jpg" alt="웨딩 사진 1" />
-        <img src="images/gallery1.jpg" alt="웨딩 사진 2" />
-        <img src="images/gallery2.jpg" alt="웨딩 사진 3" />
-        <img src="images/gallery3.jpg" alt="웨딩 사진 4" />
-        <img src="images/gallery4.jpg" alt="웨딩 사진 5" />
-        <img src="images/gallery5.jpg" alt="웨딩 사진 6" />
-        <img src="images/gallery6.jpg" alt="웨딩 사진 7" />
+      <div class="gallery-grid only-five">
+        <img src="images/main.jpg" alt="웨딩 사진 1" loading="lazy">
+        <img src="images/gallery1.png" alt="웨딩 사진 2" loading="lazy">
+        <img src="images/gallery2.png" alt="웨딩 사진 3" loading="lazy">
+        <img src="images/gallery3.png" alt="웨딩 사진 4" loading="lazy">
+        <img src="images/gallery4.png" alt="웨딩 사진 5" loading="lazy">
       </div>
     </section>
-
-    <section class="photo-banner reveal"><img src="images/gallery2.jpg" alt="웨딩 분위기 사진"><div><span>Our Beautiful Day</span><strong>2026.08.08</strong></div></section>
 
     <section class="section location reveal">
-      <p class="small-title">Location</p>
+      <p class="section-kicker">LOCATION</p>
       <h2>오시는 길</h2>
-      <div class="venue-card glass">
-        <strong>파로스웨딩홀 2층 파로스홀</strong>
-        <p>경기도 남양주시 다산순환로 20<br />다산현대프리미어캠퍼스몰 E동 2층</p>
-      </div>
-
-      <div class="map-box">
-        <iframe title="파로스컨벤션 구글지도" loading="lazy" allowfullscreen
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=%EB%8B%A4%EC%82%B0%EC%88%9C%ED%99%98%EB%A1%9C%2020%20%ED%8C%8C%EB%A1%9C%EC%8A%A4%EC%BB%A8%EB%B2%A4%EC%85%98&output=embed"></iframe>
-      </div>
-
+      <p class="address">파로스컨벤션 2층 파로스홀<br>경기도 남양주시 다산순환로 20<br>다산현대프리미어캠퍼스몰 E동 2층</p>
+      <div class="map-wrap"><iframe title="Google Map" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=%EB%8B%A4%EC%82%B0%EC%88%9C%ED%99%98%EB%A1%9C%2020%20%ED%8C%8C%EB%A1%9C%EC%8A%A4%EC%BB%A8%EB%B2%A4%EC%85%98&output=embed"></iframe></div>
       <div class="map-buttons">
-        <a href="https://map.kakao.com/link/search/%ED%8C%8C%EB%A1%9C%EC%8A%A4%EC%BB%A8%EB%B2%A4%EC%85%98" target="_blank" rel="noopener">카카오맵</a>
-        <a href="https://map.naver.com/p/search/%ED%8C%8C%EB%A1%9C%EC%8A%A4%EC%BB%A8%EB%B2%A4%EC%85%98" target="_blank" rel="noopener">네이버지도</a>
-        <a href="https://www.google.com/maps/search/?api=1&query=%EB%8B%A4%EC%82%B0%EC%88%9C%ED%99%98%EB%A1%9C%2020%20%ED%8C%8C%EB%A1%9C%EC%8A%A4%EC%BB%A8%EB%B2%A4%EC%85%98" target="_blank" rel="noopener">구글지도</a>
-        <a href="https://apis.openapi.sk.com/tmap/app/routes?appKey=&name=%ED%8C%8C%EB%A1%9C%EC%8A%A4%EC%BB%A8%EB%B2%A4%EC%85%98" target="_blank" rel="noopener">티맵</a>
+        <a href="https://map.kakao.com/link/search/%EB%8B%A4%EC%82%B0%EC%88%9C%ED%99%98%EB%A1%9C20%20%ED%8C%8C%EB%A1%9C%EC%8A%A4%EC%BB%A8%EB%B2%A4%EC%85%98" target="_blank">카카오맵</a>
+        <a href="https://map.naver.com/p/search/%EB%8B%A4%EC%82%B0%EC%88%9C%ED%99%98%EB%A1%9C20%20%ED%8C%8C%EB%A1%9C%EC%8A%A4%EC%BB%A8%EB%B2%A4%EC%85%98" target="_blank">네이버지도</a>
+        <a href="https://apis.openapi.sk.com/tmap/app/routes?appKey=&name=%ED%8C%8C%EB%A1%9C%EC%8A%A4%EC%BB%A8%EB%B2%A4%EC%85%98" target="_blank">티맵</a>
       </div>
-
-      <div class="guide-grid">
-        <div class="guide glass"><h3>🚗 자가용 이용</h3><p>내비게이션에 ‘다산순환로20’, ‘파로스컨벤션’, ‘다산현대프리미어캠퍼스몰 E동’을 입력해 주세요.</p></div>
-        <div class="guide glass"><h3>🅿️ 주차 안내</h3><p>파로스컨벤션 전용 주차장 <b>GATE 2</b> 이용<br />지하 3~4층 주차</p></div>
-        <div class="guide glass"><h3>🚇 지하철</h3><p>구리역 7번 출구(8호선 · 경의중앙선)<br />예식 행사 시 셔틀버스 운행</p></div>
-        <div class="guide glass"><h3>🚌 버스/도보</h3><p>도농역 1번 출구 도보 15분<br />도농역 2번 출구 → 땡큐50 → ‘도농고’ 하차</p></div>
-      </div>
+      <div class="guide-card"><h3>자가용 이용 시</h3><p>‘다산순환로20’ 또는 ‘파로스컨벤션’ 또는 ‘다산현대프리미엄캠퍼스몰 E동’ 입력</p><p>[파로스컨벤션 전용 주차장] GATE2 이용, 지하 3~4층</p></div>
+      <div class="guide-card"><h3>지하철 이용 시</h3><p>구리역 7번 출구(8호선 · 경의중앙선) / 예식 행사 시 셔틀버스 운행</p><p>도농역 1번 출구 도보 15분</p><p>도농역 2번 출구 버스: 땡큐50 → ‘도농고’ 하차</p></div>
     </section>
 
     <section class="section account reveal">
-      <p class="small-title">For Your Heart</p>
+      <p class="section-kicker">THANKFUL HEART</p>
       <h2>축하의 마음 전하기</h2>
-      <div class="account-list">
-        <article class="account-card glass"><span>혼주(부)</span><h3>이지상</h3><p>농협은행</p><strong>204-0285-1106-165</strong><button type="button" data-copy="20402851106165">계좌번호 복사</button></article>
-        <article class="account-card glass"><span>혼주(모)</span><h3>강영란</h3><p>하나은행</p><strong>351-0355-7113-13</strong><button type="button" data-copy="3510355711313">계좌번호 복사</button></article>
-        <article class="account-card glass"><span>신랑</span><h3>이희호</h3><p>농협은행</p><strong>356-1584-0890-63</strong><button type="button" data-copy="3561584089063">계좌번호 복사</button></article>
-        <article class="account-card glass"><span>신부</span><h3>LE THI THU</h3><p>국민은행</p><strong>204-2010-4648-508</strong><button type="button" data-copy="20420104648508">계좌번호 복사</button></article>
+      <div class="accordion">
+        <div class="acc-item"><button>혼주(부) 이지상 <span>+</span></button><div><p>농협 <b>204028-51-106165</b></p><button class="copy" data-copy="20402851106165">계좌번호 복사</button></div></div>
+        <div class="acc-item"><button>혼주(모) 강영란 <span>+</span></button><div><p>농협 <b>351-0355-7113-13</b></p><button class="copy" data-copy="3510355711313">계좌번호 복사</button></div></div>
+        <div class="acc-item"><button>신랑 이희호 <span>+</span></button><div><p>농협 <b>356-1584-0890-63</b></p><button class="copy" data-copy="3561584089063">계좌번호 복사</button></div></div>
+        <div class="acc-item"><button>신부 LE THI THU <span>+</span></button><div><p>국민은행 <b>204-2010-4648-508</b></p><button class="copy" data-copy="20420104648508">계좌번호 복사</button></div></div>
       </div>
-      <p class="note">토스·카카오페이는 개인 송금 링크가 준비되면 버튼 연결이 가능합니다.</p>
     </section>
 
     <section class="section contact reveal">
-      <p class="small-title">Contact</p>
+      <p class="section-kicker">CONTACT</p>
       <h2>연락하기</h2>
-      <div class="contact-list">
-        <article class="contact-card glass"><span>혼주(부)</span><h3>이지상</h3><p>010-3729-8017</p><div><a href="tel:01037298017">전화하기</a><a href="sms:01037298017">문자 보내기</a></div></article>
-        <article class="contact-card glass"><span>혼주(모)</span><h3>강영란</h3><p>010-3360-0376</p><div><a href="tel:01033600376">전화하기</a><a href="sms:01033600376">문자 보내기</a></div></article>
-        <article class="contact-card glass"><span>신랑</span><h3>이희호</h3><p>010-5034-7925</p><div><a href="tel:01050347925">전화하기</a><a href="sms:01050347925">문자 보내기</a></div></article>
-        <article class="contact-card glass"><span>신부</span><h3>강하은</h3><p>010-4444-7925</p><div><a href="tel:01044447925">전화하기</a><a href="sms:01044447925">문자 보내기</a></div></article>
+      <div class="contact-grid">
+        <div><b>혼주(부) 이지상</b><p>010-3729-8017</p><a href="tel:01037298017">전화</a><a href="sms:01037298017">문자</a></div>
+        <div><b>혼주(모) 강영란</b><p>010-3360-0376</p><a href="tel:01033600376">전화</a><a href="sms:01033600376">문자</a></div>
+        <div><b>신랑 이희호</b><p>010-5034-7925</p><a href="tel:01050347925">전화</a><a href="sms:01050347925">문자</a></div>
+        <div><b>신부 강하은</b><p>010-4444-7925</p><a href="tel:01044447925">전화</a><a href="sms:01044447925">문자</a></div>
       </div>
     </section>
 
     <section class="section share reveal">
-      <p class="small-title">Share</p>
-      <h2>청첩장 공유하기</h2>
-      <div class="share-buttons">
-        <button type="button" id="copyUrl">URL 복사</button>
-        <button type="button" id="kakaoShare">카카오톡 공유</button>
-        <a id="smsShare" href="sms:?body=%EC%9D%B4%ED%9D%AC%ED%98%B8%20%E2%99%A5%20%EA%B0%95%ED%95%98%EC%9D%80%20%EB%AA%A8%EB%B0%94%EC%9D%BC%20%EC%B2%AD%EC%B2%A9%EC%9E%A5">문자 공유</a>
-      </div>
+      <p class="section-kicker">SHARE</p>
+      <h2>공유하기</h2>
+      <button id="shareBtn">모바일 청첩장 공유</button>
+      <button id="urlBtn">URL 복사</button>
+      <a class="sms-share" href="sms:?body=이희호 ♥ 강하은 모바일 청첩장에 초대합니다.%0Ahttps://xmaster80-rgb.github.io/hanbyul/">문자로 공유</a>
+      <div class="qr"><img alt="QR 코드" src="https://api.qrserver.com/v1/create-qr-code/?size=160x160&data=https://xmaster80-rgb.github.io/hanbyul/"></div>
     </section>
-
-    <footer>
-      <p>Thank You</p>
-      <h2>HEEHO ♥ HAEUN</h2>
-      <span>2026.08.08</span>
-    </footer>
   </main>
 
-  <div class="lightbox" id="lightbox"><button type="button" aria-label="닫기">×</button><img alt="확대 사진" /></div>
-  <div class="toast" id="toast">복사되었습니다.</div>
+  <footer><p>Thank You</p><h2>HEEHO ♥ HAEUN</h2><span>2026.08.08</span></footer>
+  <div class="toast" id="toast">복사되었습니다</div>
+  <div class="lightbox" id="lightbox"><img alt="확대 사진"><button>×</button></div>
   <script src="js/script.js"></script>
 </body>
 </html>
