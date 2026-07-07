@@ -20,3 +20,41 @@
 .cal-korean{gap:6px}
 .cal-korean span{font-weight:700;color:#9b6b24}
 .wedding-label{display:inline-block;margin:16px auto 0;padding:7px 18px;border-radius:999px;background:linear-gradient(135deg,#b68535,#f7dda0);color:white;font-weight:700;box-shadow:0 10px 25px rgba(198,144,58,.28)}
+
+/* v12: 안정형 지도 버튼 - 인앱 브라우저 오류 방지 */
+.map-card{
+  min-height:260px;
+  border-radius:28px;
+  border:1px solid rgba(201,161,93,.35);
+  background:
+    radial-gradient(circle at 50% 42%, rgba(255,255,255,.9) 0 5%, transparent 6%),
+    linear-gradient(135deg, rgba(255,247,232,.95), rgba(235,205,153,.72)),
+    repeating-linear-gradient(45deg, rgba(201,161,93,.16) 0 2px, transparent 2px 22px);
+  box-shadow:0 24px 60px rgba(58,37,18,.18);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  color:var(--deep);
+  text-decoration:none;
+  overflow:hidden;
+  position:relative;
+}
+.map-card::before,.map-card::after{
+  content:"";
+  position:absolute;
+  background:rgba(255,255,255,.32);
+}
+.map-card::before{width:150%;height:1px;top:40%;left:-25%;box-shadow:0 62px 0 rgba(255,255,255,.25),0 -62px 0 rgba(255,255,255,.25)}
+.map-card::after{width:1px;height:150%;left:50%;top:-25%;box-shadow:70px 0 0 rgba(255,255,255,.22),-70px 0 0 rgba(255,255,255,.22)}
+.map-card>*{position:relative;z-index:1}.map-pin{font-size:38px;filter:drop-shadow(0 8px 16px rgba(88,55,20,.25))}.map-card strong{font-size:22px;color:#9a681d}.map-card span{font-size:14px}.map-card small{font-size:12px;color:#856948;margin-top:6px}.stable-map-buttons{grid-template-columns:repeat(2,1fr)}.stable-map-buttons button{border:0;border-radius:999px;padding:13px 10px;background:linear-gradient(135deg,#b88738,#edcf91);color:white;font-weight:700;box-shadow:0 10px 25px rgba(166,112,35,.25);font-family:inherit;font-size:16px}.acc-item>button{word-break:keep-all}@media(max-width:520px){.stable-map-buttons{grid-template-columns:1fr 1fr}.map-card{min-height:230px}.map-card small{padding:0 18px;line-height:1.6}}
+
+/* v14 parent labels: same style as groom/bride, unified in account/contact */
+.role-label{font-family:'Noto Serif KR',serif;font-size:17px;font-weight:700;letter-spacing:1px;color:var(--deep);line-height:1;}
+.person-name{font-size:17px;font-weight:700;color:var(--deep);}
+.account .acc-item>button{align-items:center;gap:4px;}
+.account .acc-item>button .person-name{flex:1;text-align:left;}
+.contact-grid b{display:block;font-size:17px;font-weight:700;color:var(--deep);}
+.contact-grid .role-label,.contact-grid .person-name{font-size:17px;}
+@media(max-width:520px){.role-label,.person-name,.contact-grid b,.contact-grid .role-label,.contact-grid .person-name{font-size:16px;}}
